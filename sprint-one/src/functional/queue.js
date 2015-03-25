@@ -14,7 +14,7 @@ var Queue = function(){
 
   someInstance.dequeue = function(){
     if (size > 0) {
-      var result = storage['0'];
+      var result = storage[0];
       for (var index in storage) {
         var i = parseInt(index + 1);
         storage[index] = storage[i];
