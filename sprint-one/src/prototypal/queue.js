@@ -10,21 +10,19 @@ var Queue = function() {
 
 var queueMethods = {};
 queueMethods.enqueue = function(value){
-  this.storage[this.len] = value;
   this.len++
+  this.storage[this.len] = value;
 };
 queueMethods.dequeue = function(){
-  var result;
-  if(this.len > 0){
-    result = this.storage[0];
-    for(var i = 0; i < this.len; i++){
-      this.storage[i] = this.storage[i+1];
-    }
-    delete this.storage[this.len];
-    this.len--;
+  var size = Object.keys(this.storage);
+  if(size.length > 0){
+    var result = this.storage[size[0]];
+    delete this.storage[size[0]];
+  } else {
+    this.len = 0;
   }
   return result;
 };
 queueMethods.size = function(){
-  return this.len;
+  return Object.keys(this.storage).length;
 };

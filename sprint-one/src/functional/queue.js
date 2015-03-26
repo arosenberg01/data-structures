@@ -16,6 +16,8 @@ var Queue = function(){
     if (size.length > 0) {
       var result = storage[size[0]];
       delete storage[size[0]];
+    } else {
+      sized = 0;
     }
     return result;
   };
