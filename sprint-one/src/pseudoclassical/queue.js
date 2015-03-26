@@ -1,16 +1,16 @@
-var Queue = function() {
+var pseudoclassicalQueue = function() {
   // Hey! Rewrite in the new style. Your code will wind up looking very similar,
   // but try not not reference your old code in writing the new style.
   this.len = 0;
   this.storage = {};
 };
 
-Queue.prototype.enqueue = function(value){
+pseudoclassicalQueue.prototype.enqueue = function(value){
   this.len++;
   this.storage[this.len] = value;
 };
 
-Queue.prototype.dequeue = function(){
+pseudoclassicalQueue.prototype.dequeue = function(){
   var size = Object.keys(this.storage);
   if(size.length > 0){
     var result = this.storage[size[0]];
@@ -21,6 +21,6 @@ Queue.prototype.dequeue = function(){
   return result;
 };
 
-Queue.prototype.size = function(){
+pseudoclassicalQueue.prototype.size = function(){
   return Object.keys(this.storage).length;
 }

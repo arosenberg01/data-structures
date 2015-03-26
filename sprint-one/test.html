@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-</head>
-<body>
-	<script type="text/javascript" src="src/functional/stack.js"></script>
+    <title>Extra Credit</title>
+	<script type="text/javascript" src="../lib/underscore/underscore.js"></script>
+    <script type="text/javascript" src="src/functional/stack.js"></script>
 	<script type="text/javascript" src="src/functional/queue.js"></script>
 	<script type="text/javascript" src="src/functional-shared/stack.js"></script>
 	<script type="text/javascript" src="src/functional-shared/queue.js"></script>
@@ -12,5 +12,16 @@
 	<script type="text/javascript" src="src/pseudoclassical/stack.js"></script>
 	<script type="text/javascript" src="src/pseudoclassical/queue.js"></script>
 	<script type="text/javascript" src="src/script.js"></script>
+</head>
+<body>
+	<h3>Profiling Extra Credit</h3>
+	<hr>
+	<br />
+    <input id='in' value="Instatiation Count" onclick='this.value=""'></input>
+    <br />
+    <input id='pat' value="Instatiation Pattern" onclick='this.value=""'></input>
+	<br />
+    <br />
+	<button onclick='test(document.getElementById("in").value, document.getElementById("pat").value);'>Test</button>
 </body>
 </html>

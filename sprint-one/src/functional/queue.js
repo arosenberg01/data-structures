@@ -1,4 +1,4 @@
-var Queue = function(){
+var functionalQueue = function(){
   var someInstance = {};
 
   // Use an object with numeric keys to store values

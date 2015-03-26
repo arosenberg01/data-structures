@@ -1,4 +1,4 @@
-var Queue = function(){
+var functionalSharedQueue = function(){
   var queue = {};
   queue.storage = {};
   queue.sized = 0;
