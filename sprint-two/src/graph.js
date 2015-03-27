@@ -19,7 +19,6 @@ Graph.prototype.removeNode = function(node){
 };
 
 Graph.prototype.hasEdge = function(fromNode, toNode){
-  debugger;
   return !!this.vertices[fromNode][toNode] && !!this.vertices[toNode][fromNode]
 };
 
@@ -38,6 +37,9 @@ Graph.prototype.removeEdge = function(fromNode, toNode){
 };
 
 Graph.prototype.forEachNode = function(cb){
+  _.each(this.vertices, function(item, i){
+    cb(i);
+  });
 };
 
 /*
