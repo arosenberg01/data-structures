@@ -29,7 +29,6 @@ BinarySearchTreeMethods.insert = function(v){
 };
 
 BinarySearchTreeMethods.contains = function(v){
-      debugger;
   if(this.value === v){
     return true;
   } else if(v > this.value){
