@@ -54,11 +54,6 @@ BinarySearchTreeMethods.depthFirstLog = function(cb){
   } else if(this.right){
     this.right.depthFirstLog(cb);
   }
-  // call callback on this.value
-  // if this.left exists
-    // depthFirstLog this.left
-  // else if this.right exists
-    // depthFirstLog this.right
 };
 
 
