@@ -55,13 +55,13 @@ describe('hashTable', function() {
       hashTable.insert(firstName,lastName);
     });
     expect(hashTable._limit).to.equal(16);
-    hashTable.remove('George');
-    hashTable.remove('Dr.');
-    hashTable.remove('Steven');
-    hashTable.remove('Magic');
-    hashTable.remove('Doctor');
-    hashTable.remove('John');
-    hashTable.remove('Mr.');
+    hashTable.remove('George'); // 7
+    hashTable.remove('Dr.'); // 4
+    hashTable.remove('Steven'); // 11
+    hashTable.remove('Magic'); // 1
+    hashTable.remove('Doctor'); // 5
+    hashTable.remove('John'); // 15
+    hashTable.remove('Mr.'); // 13
     expect(hashTable._limit).to.equal(8);
   });
 });
